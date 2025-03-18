@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penyewaan Alat Outdoor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <div class="rental-container">
+        <h2 class="judul">Masukkan Data</h2>
+        <form id="rentalForm" class="rental-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Masukkan email">
+            
+            <label for="phone">Nomor HP:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Masukkan nomor HP Anda">
+
+            <label for="rental-item">Pilih Alat:</label>
+            <select id="rental-item" name="rental-item">
+                <option value="" disabled selected>Pilih</option>
+                <option value="tenda">Tenda</option>
+                <option value="sleeping-bag">Sleeping Bag</option>
+                <option value="carrier">Carrier</option>
+                <option value="kompor">Kompor Portable</option>
+            </select>
+
+            <label for="quantity">Jumlah:</label>
+            <select id="quantity" name="quantity" required>
+                <option value="" disabled selected>Pilih</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            
+            <label for="days">Durasi Sewa (hari):</label>
+            <select id="days" name="days" required>
+                <option value="" disabled selected>Pilih</option>
+                <option value="1">1 Hari</option>
+                <option value="2">2 Hari</option>
+                <option value="3">3 Hari</option>
+                <option value="4">4 Hari</option>
+                <option value="5">5 Hari</option>
+                <option value="6">6 Hari</option>
+                <option value="7">7 Hari</option>
+            </select>
+
+            <button type="submit">Sewa Sekarang</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
